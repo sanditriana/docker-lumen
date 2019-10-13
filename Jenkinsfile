@@ -5,4 +5,5 @@ pipeline {
                 sh 'php --version'
             }
         }
+    }
 }
