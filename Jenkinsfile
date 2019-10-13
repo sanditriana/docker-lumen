@@ -1,9 +1,9 @@
 pipeline {
-    agent none
+    agent { docker { image 'php' } }
     stages {
-        stage('deploy') {
+        stage('build') {
             steps {
-                bat 'php --version'
+                sh 'php --version'
             }
         }
     }
